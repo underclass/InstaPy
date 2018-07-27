@@ -381,12 +381,10 @@ def get_links_for_username(browser,
 def check_link(browser, post_link, dont_like, ignore_if_contains, logger):
     """
     Check the given link if it is appropriate
-
     :param browser: The selenium webdriver instance
     :param link:
     :param dont_like: hashtags of inappropriate phrases
     :param ignore_if_contains:
-
     :param logger: the logger instance
     :return: tuple of
         boolean: True if inappropriate,
@@ -616,3 +614,4 @@ def verify_liking(browser, max, min, logger):
             return False
 
         return True
+    
